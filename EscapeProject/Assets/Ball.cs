@@ -4,7 +4,7 @@ using System.Collections;
 public class Ball : MonoBehaviour {
 	//Variables
 	private GameObject obj;
-	public LayerMask mask;
+	private LayerMask mask;
 	public GameObject Sphere;
 
 	// Use this for initialization
