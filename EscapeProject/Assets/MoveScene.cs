@@ -21,7 +21,7 @@ public class MoveScene : MonoBehaviour {
 		if (Input.GetMouseButtonDown (0)) {
 			Ray mouseRay = Camera.main.ScreenPointToRay (Input.mousePosition);
 			RaycastHit hit;
-			mask = 3;
+			mask = 4;
 			if (Physics.Raycast (mouseRay, out hit, 1000.0f, mask)) {
 				toMainScene();
 			}
