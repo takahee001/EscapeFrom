@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BackScene.cs" />
      <Compile Include="Assets\Ball.cs" />
      <Compile Include="Assets\Manager.cs" />
      <Compile Include="Assets\MoveScene.cs" />
