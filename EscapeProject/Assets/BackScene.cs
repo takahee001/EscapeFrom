@@ -21,9 +21,11 @@ public class BackScene : MonoBehaviour {
 		if (Input.GetMouseButtonDown (0)) {
 			Ray mouseRay = Camera.main.ScreenPointToRay (Input.mousePosition);
 			RaycastHit hit;
-			mask = 4;
+			mask = 1;
 			if (Physics.Raycast (mouseRay, out hit, 1000.0f, mask)) {
-				toMainScene();
+				if (hit.collider.name == "Hole2") {
+					toMainScene ();
+				}
 			}
 		}
 

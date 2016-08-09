@@ -1,11 +1,11 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
-public class Ball : MonoBehaviour {
+public class Cube : MonoBehaviour {
 	//Variables
 	private GameObject obj;
 	private LayerMask mask;
-	public GameObject Sphere;
+	public GameObject Box;
 	public GameObject objB;
 
 	// Use this for initialization
@@ -22,13 +22,13 @@ public class Ball : MonoBehaviour {
 			RaycastHit hit;
 			mask = 1;
 			if(Physics.Raycast(mouseRay,out hit,1000.0f ,mask))
-				{
-				if (hit.collider.name == "Ball") {
+			{
+				if (hit.collider.name == "Cube") {
 					objB.SendMessage ("Secall");
-					obj.GetComponent<Manager> ().addTappedBallNum ();
+					obj.GetComponent<Manager> ().addTappedCubeNum ();
 					Destroy (gameObject);
 				}
-				}
+			}
 		}
 	}
 }
