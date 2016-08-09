@@ -19,7 +19,6 @@ public class Manager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		TappedBallNum = 0;
 		//t.text = "Number of Balls :" + TappedBallNum.ToString();
 		score.text = "Number of Balls :" + TappedBallNum.ToString();
 
