@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class Manager : MonoBehaviour {
 	//Variables
 	//Private
+	//public GameObject Sphere;
 	static int TappedBallNum;
 	static int TappedStickNum;
 	static int TappedCubeNum;
@@ -20,11 +21,23 @@ public class Manager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//t.text = "Number of Balls :" + TappedBallNum.ToString();
-		score.text = "Number of Balls :" + TappedBallNum.ToString();
+		//DontDestroyOnLoad (t1);
+		//DontDestroyOnLoad (t2);
+		//DontDestroyOnLoad (t3);
+		//DontDestroyOnLoad (score);
 
-		t1.text = "Number of Triangles :" + TappedTriangleNum.ToString();
-		t2.text = "Number of Sticks :" + TappedStickNum.ToString();
-		t3.text = "Number of Cubes :" + TappedCubeNum.ToString();
+
+		score.text = "Number of Balls :" + TappedBallNum.ToString ();
+
+		t1.text = "Number of Triangles :" + TappedTriangleNum.ToString ();
+		t2.text = "Number of Sticks :" + TappedStickNum.ToString ();
+		t3.text = "Number of Cubes :" + TappedCubeNum.ToString ();
+
+		//if (Ball.Room1Ball == 1) {
+		//	print ("hoge2");
+		//	if(
+			//	Destroy (gameObject);
+		//}
 	}
 	
 	// Update is called once per frame

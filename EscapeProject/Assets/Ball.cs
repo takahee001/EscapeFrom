@@ -7,11 +7,24 @@ public class Ball : MonoBehaviour {
 	private LayerMask mask;
 	public GameObject Sphere;
 	public GameObject objB;
+	public static int Room1Ball;
+	public static int Room2Ball;
 
 	// Use this for initialization
 
 	void Start () {
+		//DontDestroyOnLoad(this);
 		obj = GameObject.Find ("Manager");
+		if (Room1Ball == 1) {
+			if (Sphere.GetComponent<Collider>().tag == "Room1") {
+				Destroy (gameObject);
+			}
+		}
+		if (Room2Ball == 1) {
+			if (Sphere.GetComponent<Collider>().tag == "Room2") {
+				Destroy (gameObject);
+			}
+		}
 	}
 
 	// Update is called once per frame
@@ -27,7 +40,14 @@ public class Ball : MonoBehaviour {
 					objB.SendMessage ("Secall");
 					obj.GetComponent<Manager> ().addTappedBallNum ();
 					Destroy (gameObject);
+					if (hit.collider.tag == "Room1") {
+						Room1Ball++;
+					}
+					if (hit.collider.tag == "Room2") {
+						Room2Ball++;
+					}
 				}
+
 				}
 		}
 	}

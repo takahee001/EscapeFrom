@@ -5,11 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class BackScene : MonoBehaviour {
 	private LayerMask mask;
+	//private GameObject obj;
+	//public GameObject Sphere;
 	// Use this for initialization
 
 	public void toMainScene()
 	{
 		SceneManager.LoadScene ("Room1");
+		//if(TappedBallNum == 0){
 	}
 	void Start () {
 
@@ -25,9 +28,13 @@ public class BackScene : MonoBehaviour {
 			if (Physics.Raycast (mouseRay, out hit, 1000.0f, mask)) {
 				if (hit.collider.name == "Hole2") {
 					toMainScene ();
-				}
+
 			}
 		}
 
 	}
 }
+}
+
+
+

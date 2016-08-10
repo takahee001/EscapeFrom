@@ -25,6 +25,7 @@ public class MoveScene : MonoBehaviour {
 			if (Physics.Raycast (mouseRay, out hit, 1000.0f, mask)) {
 				if (hit.collider.name == "Hole") {
 					toMainScene ();
+
 				}
 			}
 		}
