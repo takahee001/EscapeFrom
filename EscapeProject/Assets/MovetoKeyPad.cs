@@ -7,7 +7,7 @@ public class MovetoKeyPad : MonoBehaviour {
 	private LayerMask mask;
 	// Use this for initialization
 
-	private void to2DScene()
+	public void toPadScene()
 	{
 		SceneManager.LoadScene ("KeyPad");
 	}
@@ -24,7 +24,7 @@ public class MovetoKeyPad : MonoBehaviour {
 			mask = 1;
 			if (Physics.Raycast (mouseRay, out hit, 1000.0f, mask)) {
 				if (hit.collider.name == "KeyPad") {
-					to2DScene ();
+					toPadScene ();
 
 				}
 			}
