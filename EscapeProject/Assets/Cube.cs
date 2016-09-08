@@ -10,6 +10,7 @@ public class Cube : MonoBehaviour {
 	public static int Room1Cube;
 	public static int Room2Cube;
 
+
 	// Use this for initialization
 
 	void Start () {

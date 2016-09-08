@@ -39,7 +39,7 @@ public class Manager : MonoBehaviour {
 			//	Destroy (gameObject);
 		//}
 	}
-	
+	 
 	// Update is called once per frame
 	void Update () {
 		
@@ -47,22 +47,18 @@ public class Manager : MonoBehaviour {
 
 	public void addTappedBallNum() {
 		TappedBallNum++;
-		print ("hoge");
 		score.text = "Number of Balls :" + TappedBallNum.ToString();
 	}
 	public void addTappedCubeNum() {
 		TappedCubeNum++;
-		print ("hoge");
 		t3.text = "Number of Cubes :" + TappedCubeNum.ToString();
 	}
 	public void addTappedTriangleNum() {
 		TappedTriangleNum++;
-		print ("hoge");
 		t1.text = "Number of Triangles :" + TappedTriangleNum.ToString();
 	}
 	public void addTappedStickNum() {
 		TappedStickNum++;
-		print ("hoge");
 		t2.text = "Number of Sticks :" + TappedStickNum.ToString();
 	}
 
