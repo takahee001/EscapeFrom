@@ -49,6 +49,7 @@
      <Compile Include="Assets\Ball.cs" />
      <Compile Include="Assets\Cube.cs" />
      <Compile Include="Assets\GetterSe.cs" />
+     <Compile Include="Assets\Key.cs" />
      <Compile Include="Assets\KeyPad.cs" />
      <Compile Include="Assets\Manager.cs" />
      <Compile Include="Assets\MoveCamera.cs" />

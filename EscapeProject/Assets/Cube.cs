@@ -39,7 +39,7 @@ public class Cube : MonoBehaviour {
 			{
 				if (hit.collider.name == "Cube") {
 					objB.SendMessage ("Secall");
-					obj.GetComponent<Manager> ().addTappedCubeNum ();
+					obj.GetComponent<Manager> ().addTappedBallNum ();
 					Destroy (gameObject);
 					if (hit.collider.tag == "Room1") {
 						Room1Cube++;
