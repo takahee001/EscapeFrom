@@ -11,6 +11,9 @@ public class KeyPad : MonoBehaviour {
 	// Use this for initialization
 
 	void Start () {
+		if (destroied == 1) {
+			Destroy (keyPad);
+		}
 	
 	}
 	

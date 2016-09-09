@@ -6,16 +6,18 @@ public class Manager : MonoBehaviour {
 	//Variables
 	//Private
 	//public GameObject Sphere;
-	static int TappedBallNum;
-	static int TappedStickNum;
-	static int TappedCubeNum;
-	static int TappedTriangleNum;
+	public static int TappedBallNum;
+	public static int TappedStickNum;
+	public static int TappedCubeNum;
+	public static int TappedTriangleNum;
+	public static int TappedKeyNum;
 
 	//Public
  	public Text score;
 	public Text t1;
 	public Text t2;
 	public Text t3;
+	//public Text t4;
 
 
 	// Use this for initialization
@@ -61,5 +63,9 @@ public class Manager : MonoBehaviour {
 		TappedStickNum++;
 		t2.text = "Number of Sticks :" + TappedStickNum.ToString();
 	}
+//	public void addTappedKeyNum() {
+//		TappedKeyNum++;
+//		t4.text = "You have a Key";
+//	}
 
 }

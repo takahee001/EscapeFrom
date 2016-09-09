@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class BackScene : MonoBehaviour {
 	private LayerMask mask;
+	public Text t4;
 	//private GameObject obj;
 	//public GameObject Sphere;
 	// Use this for initialization
@@ -15,7 +17,9 @@ public class BackScene : MonoBehaviour {
 		//if(TappedBallNum == 0){
 	}
 	void Start () {
-
+		if (Manager.TappedKeyNum == 1) {
+			t4.text = "You have a Key";
+		}
 
 	}
 
@@ -28,7 +32,6 @@ public class BackScene : MonoBehaviour {
 			if (Physics.Raycast (mouseRay, out hit, 1000.0f, mask)) {
 				if (hit.collider.name == "Hole2") {
 					toMainScene ();
-
 			}
 		}
 
